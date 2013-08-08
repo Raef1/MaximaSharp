@@ -64,6 +64,14 @@ Maxima.GnuPlot(@"
 	set isosamples 30, 20
 	splot [-pi:pi][-pi:pi] cos(u)*(cos(v)+3), sin(u)*(cos(v)+3), sin(v) w pm
 ");
+Maxima.GnuPlot(@"
+	set parametric 
+	set hidden3d
+	set noautoscale
+	set view 70, 20, 7
+	set isosamples 40, 20
+	splot [0:4*pi][0.001:2] cos(u)*sin(v), sin(u)*sin(v),cos(v)+log(tan(v/2))+0.2*u -4
+");
 Console.ReadLine();
 ```
 Produces the following graphs:
