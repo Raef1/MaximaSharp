@@ -78,7 +78,7 @@ Produces the following graphs:
 
 ![Plot of x + 5 * cos(x)](http://farm3.staticflickr.com/2859/9458377507_b8deeb31a1_o.png)
 ![Plot of cos(u)*(cos(v)+3), sin(u)*(cos(v)+3), sin(v)](http://farm6.staticflickr.com/5321/9461158962_42356e823a_o.png)
-![Plot of cos(u)*sin(v), sin(u)*sin(v),cos(v)+log(tan(v/2))+0.2*u -4](https://raw.github.com/Raef1/MaximaSharp/master/Image1.png)
+![Plot of cos(u)*sin(v), sin(u)*sin(v),cos(v)+log(tan(v/2))+0.2*u -4](https://raw.github.com/Raef1/MaximaSharp/master/Images/Image1.png)
 
 ### More stuff ###
 Evaluate functions:
