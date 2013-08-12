@@ -93,11 +93,13 @@ Console.WriteLine(g.At(10));
 Perform basic operations on functions:
 ```csharp
 Console.WriteLine(g.Plus(h));
+Console.WriteLine(((Expression<Func<double,double,double,double>>)g.Plus(h)).Simplify());
 Console.WriteLine(g.Minus(h));
 Console.WriteLine(f.Times(g));
 Console.WriteLine(f.Over(g));
 // Output:
 // (x, y, z) => (((2 * x) + 10) + ((3 * y) + z))
+// (x, y, z) => (((z + (3 * y)) + (2 * x)) + 10)
 // (x, y, z) => (((2 * x) + 10) - ((3 * y) + z))
 // x => (((((3 * Pow(x, 2)) + (2 * x)) + Pow(Cos(x), 2)) + Pow(Sin(x), 2)) * ((2 * x) + 10))
 // x => (((((3 * Pow(x, 2)) + (2 * x)) + Pow(Cos(x), 2)) + Pow(Sin(x), 2)) / ((2 * x) + 10))
